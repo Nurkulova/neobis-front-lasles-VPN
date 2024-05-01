@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik";
+  }
+
+.container {
+    max-width: 100%; 
+    margin: 3rem 5rem; 
+    padding: 0 20px; 
+  }
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  list-style: none;
+  padding: 0 8rem;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0 1.5rem;
+  color: #4F5665;
+}
+
+.signIn-button {
+  cursor: pointer;
+  color: black;
+  background:none;
+  border: none;
+  font-weight: 700;
+  margin-right: 2rem;
+}
+
+.signUp-button {
+  cursor: pointer;
+  color: #F53838;
+  background:none;
+  border: 1px solid #F53838;
+  border-radius: 30px;
+  font-weight: 700;
+  padding: 0 3rem;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  padding-top: 4rem;
+}
+
+.main-text-part {
+  padding: 1rem;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+p {
+  font-weight: 350;
+  line-height: 35px;
+  color: #4F5665
+}
+
+.main-button {
+  background-color: #F53838;
+  padding: 1rem 4rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  margin-top: 2rem;
+}
