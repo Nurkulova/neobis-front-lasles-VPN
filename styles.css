@@ -52,17 +52,17 @@ a {
   color:#F53838;
 }
 
-.signUp-button {
+.select-button {
   cursor: pointer;
   color: #F53838;
   background:none;
   border: 1px solid #F53838;
   border-radius: 30px;
   font-weight: 700;
-  padding: 0 3rem;
+  padding: 1rem 3rem;
 }
 
-.signUp-button:hover {
+.select-button:hover {
   background-color: #F53838;
   color:#ffff;
 }
@@ -73,9 +73,10 @@ a {
   padding-top: 4rem;
 }
 
-.main-text-part {
-  padding: 1rem;
+.main-text-part >p {
+  margin-bottom: 3rem;
 }
+
 h1 {
   font-size: 3em;
   font-weight: 500;
@@ -84,7 +85,7 @@ h1 {
 p {
   font-weight: 350;
   line-height: 35px;
-  color: #4F5665
+  color: #4F5665;
 }
 
 .main-button {
@@ -94,7 +95,6 @@ p {
   font-weight: 600;
   border-radius: 10px;
   border: none;
-  margin-top: 2rem;
   cursor: pointer;
 }
 
@@ -103,16 +103,20 @@ p {
 }
 
 article {
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 10rem;
-  width: 80%;
+  width: 1140px;
   margin: 10rem auto;
-  padding: 2rem 5rem;
+  padding: 1rem 0;
   background-color: #ffff;
   border-radius: 10px;
+}
+
+.vertical-vector {
+ padding-left: 7rem;
 }
 
 .article-box {
@@ -122,10 +126,11 @@ article {
   padding: 0 3rem;
 }
 
-.article-text b {
-  font-weight: 800;
-  font-size: 1.3rem;
+.article-text > b {
+  font-weight: 700;
+  font-size: 25px;
 }
+
 
 
 .features {
@@ -139,6 +144,12 @@ article {
   flex-direction: column;
   color: #4F5665;
   line-height: 3rem;
+  list-style-type: none;
+  list-style: none;
+}
+
+.feature-list > li > img {
+  margin-right: 10px;
 }
 
 h2 {
@@ -150,6 +161,14 @@ h2 {
   margin: 10rem auto;
 }
 
+.plan-list > li {
+  list-style-type: none;
+  list-style: none;
+}
+.plan-list > li > img {
+  margin-right: 1rem;
+}
+
 .packages {
   display: flex;
   flex-direction: row;
@@ -157,20 +176,228 @@ h2 {
   margin: 6rem auto;
 }
 
-.packages div{
+.packages-inner{
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 20rem;
-  height: 47.5rem;
+  height: 50rem;
   border: 2px solid #DDDDDD;
   border-radius: 10px;
 }
 
+.packages-inner:hover {
+  border: 2px solid #F53838;
+}
+
 .packages > div > img {
+  padding-top: 4rem;
   width: 9rem;
   height: 10rem;
 }
 
-.plan h2,p {
+.plan > h2 {
   text-align: center;
+}
+
+.text {
+  text-align: center;
+}
+
+.plan-title {
+  padding-top: 0.8rem;
+  color: #0B132A;
+  font-size: 18px;
+  font-weight: 550;
+}
+
+
+.plan-list {
+  display:flex;
+  flex-direction: column;
+  color: #4F5665;
+  line-height: 3rem;
+  padding-top: 1rem;
+}
+
+.free-plan {
+  padding: 8rem 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.standart-plan > b {
+  color: black
+}
+
+.standart-plan {
+  padding-top: 3rem;
+}
+
+.premium-plan > b{
+  color: black
+}
+
+
+.locations > h2 {
+  text-align: center;
+}
+
+.locations > img {
+  margin: 4rem;
+}
+
+.companies {
+  position: relative;
+}
+
+.companies > img {
+  margin: 4rem 0;
+  display: inline-block;
+} 
+
+.amazon {
+  position: absolute;
+  left: 28rem;
+  top: -2.5rem;
+}
+
+.netflix {
+  position: absolute;
+  left: 2rem;
+}
+
+.reddit {
+  position: absolute;
+  left: 17rem;
+  top: 1.9rem;
+}
+
+.discord {
+  position: absolute;
+  left: 45rem;
+  top: 1.9rem;
+}
+
+.spotify {
+  position: absolute;
+  left: 60rem;
+  top: 1.9rem;
+}
+
+
+.testimonials {
+  width: 80%;
+  margin: 15rem auto;
+}
+
+.testimonials > h2 , .text {
+  text-align: center;
+}
+
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 2rem;
+}
+
+.testimonial {
+  margin-top: 3rem;
+  width: 400px;
+  height: 230px;
+  flex: 0 0 35%; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #DDDDDD;
+  border-radius: 10px;
+}
+
+.testimonial:hover {
+  border: 1px solid #F53838;
+}
+
+
+.slide-content {
+  display: flex;
+}
+
+.testimonial > div > .testimonial-text {
+  text-align: start;
+}
+
+.grade {
+  display: flex;
+}
+
+.btn {
+  margin-top: 2rem;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #F53838;
+  border: 1px solid #F53838;
+}
+
+.btn:hover {
+  background-color: #F53838;
+  color: #fff;
+  border: none;
+}
+
+.btn.prev {
+  left: 10px;
+}
+
+.btn.next {
+  right: 10px;
+}
+
+
+/* subscribe part */
+
+.subscribe > h3,p {
+  text-align: start;
+}
+
+
+/* footer part */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-part {
+
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5rem;
+
+}
+
+
+.social-media {
+  display: flex;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.media-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
 }
